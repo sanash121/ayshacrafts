@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+<defs>
+<filter id="plush" x="-5%" y="-5%" width="110%" height="110%">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="4" result="warp"/>
+<feDisplacementMap in="SourceGraphic" in2="warp" scale="5" result="w"/>
+<feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="9" result="grain"/>
+<feColorMatrix in="grain" type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1.3 0 0 0 -0.55" result="light"/>
+<feComposite in="light" in2="w" operator="in" result="speck"/>
+<feMerge><feMergeNode in="w"/><feMergeNode in="speck"/></feMerge>
+</filter>
+
+</defs>
+<rect width="600" height="600" fill="#F9EBC0"/>
+
+<ellipse cx="300" cy="574" rx="170" ry="14" fill="#2E2A3B" opacity=".10"/>
+<g filter="url(#plush)">
+<ellipse cx="225" cy="535" rx="62" ry="40" fill="#D9B48F"/><ellipse cx="375" cy="535" rx="62" ry="40" fill="#D9B48F"/>
+<ellipse cx="225" cy="541" rx="36" ry="22" fill="#EBD0B0"/><ellipse cx="375" cy="541" rx="36" ry="22" fill="#EBD0B0"/>
+<ellipse cx="300" cy="420" rx="125" ry="130" fill="#D9B48F"/>
+<ellipse cx="300" cy="440" rx="80" ry="88" fill="#EBD0B0"/>
+<path d="M300 474 C262 444 268 412 290 412 C298 412 300 420 300 422 C300 420 302 412 310 412 C332 412 338 444 300 474Z" fill="#F2B8C0"/>
+<ellipse cx="185" cy="410" rx="34" ry="66" fill="#D9B48F" transform="rotate(25 185 410)"/>
+<ellipse cx="415" cy="410" rx="34" ry="66" fill="#D9B48F" transform="rotate(-25 415 410)"/>
+<circle cx="205" cy="140" r="46" fill="#D9B48F"/><circle cx="205" cy="144" r="24" fill="#EBD0B0"/>
+<circle cx="395" cy="140" r="46" fill="#D9B48F"/><circle cx="395" cy="144" r="24" fill="#EBD0B0"/>
+<circle cx="300" cy="230" r="108" fill="#D9B48F"/>
+<ellipse cx="300" cy="266" rx="52" ry="40" fill="#EBD0B0"/>
+<circle cx="236" cy="262" r="16" fill="#F2B8C0" opacity=".6"/><circle cx="364" cy="262" r="16" fill="#F2B8C0" opacity=".6"/>
+<circle cx="258" cy="212" r="9" fill="#2E2A3B"/><circle cx="342" cy="212" r="9" fill="#2E2A3B"/>
+<path d="M284 250 q16 -10 32 0 q-4 14 -16 16 q-12 -2 -16 -16Z" fill="#6B4A3A"/>
+<path d="M300 266 v10 M300 276 q-9 8 -18 0 M300 276 q9 8 18 0" fill="none" stroke="#6B4A3A" stroke-width="4" stroke-linecap="round"/>
+<path d="M228 330 Q300 372 372 330" fill="none" stroke="#F2B8C0" stroke-width="22" stroke-linecap="round"/>
+<path d="M232 330 Q300 370 368 330" fill="none" stroke="#fff" stroke-opacity=".6" stroke-width="3" stroke-dasharray="2 9" stroke-linecap="round"/>
+</g>
+</svg>
